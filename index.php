@@ -456,7 +456,7 @@ DOCTYPE html>
                     echo"<div class='chart-table1'>";
                 echo "<table class='chart-table'>";
                 
-                    echo"hsdbajsbjabs";
+                    echo"<h1>NO ID NUMBER HAS BEEN INPUTED YET</h1>";
 
                 echo"</table>";
                 echo"</div>";
@@ -470,7 +470,7 @@ DOCTYPE html>
                     <input type='text' name='end_date' class='end_date'>
                 </div>
 
-                <button type='submit' name='set_date' class='set_date'>Set Dates</button>
+                <button name='set_date' class='set_date'>Set Dates</button>
                 </form>
                 ";
 
@@ -479,9 +479,50 @@ DOCTYPE html>
                 {
                     echo"<script>alert('the stuff is');</script>";
 
+                    $user = "root";
+                    $pass = "";
+                    $db ="nassp";
+                    $db = new mysqli('localhost',$user,$pass,$db)
+                    or die("could not connect");
+
+                    $names_lenght="SELECT * FROM names ";
+
+                    $run_names_lenght = mysqli_query($db,$names_lenght);
+
+                    $names_lenght_row  = mysqli_num_rows($run_names_lenght);
+
                     $start_date = $_POST['start_date'];
 
-                    $start_date = $_POST['end_date'];
+                    $y = $start_date;
+
+                    $end_date = $_POST['end_date'];
+
+                    // $names_get = mysqli_fetch_assoc($run_names_lenght);
+
+                    // $name_id = $names_get['id'];
+
+                    // $sheddy1 = 14;
+
+                    // $change = "UPDATE employees SET `$sheddy1`='closed' WHERE userid='$name_id'";
+
+                    // mysqli_query($db,$change);
+
+                    for($x=0; $x<$names_lenght_row;$x++)
+                    {
+                        $names_get = mysqli_fetch_assoc($run_names_lenght);
+                        $name_id = $names_get['id'];
+
+                        for($i=$start_date;$i<=$end_date;$i++)
+                        {
+                            
+                            $change = "UPDATE employees SET `$i`='closed' WHERE userid='$name_id'";
+                            mysqli_query($db,$change);
+                            
+                        }
+                    }
+
+                    $delete_names_table = "TRUNCATE TABLE names";
+                    mysqli_query($db,$delete_names_table);
 
                     
                 } 
