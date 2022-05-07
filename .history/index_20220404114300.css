@@ -1,0 +1,13 @@
+body{
+    background-color: #079E71;
+}
+
+#header{
+ height: 70px;
+width: 100%;
+position: absolute;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+background: #E5FCEA;
+}
