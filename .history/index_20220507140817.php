@@ -22,11 +22,11 @@ DOCTYPE html>
         <label class="logo-text">NASSCO RETIREMENT CHART</label>
 
         <form action="" method="POST">
-            <button class="view-chart btn btn-success " name="view-chart">
+            <button class="btn btn-success view-chart" name="view-chart">
                 View Chart
             </button>
 
-            <button class="btn btn-success create-chart" name="create-chart">
+            <button class="create-chart" name="create-chart">
                 Create Chart
             </button>
         </form>
@@ -79,7 +79,7 @@ DOCTYPE html>
                         Chart Name
                         </label>
 
-                        <input type='text' class='input-group-text chart-name-text' name='chart-name-text'>
+                        <input type='text' class='chart-name-text' name='chart-name-text'>
                     </div>
 
                     <div id='chart-month'>
@@ -87,7 +87,7 @@ DOCTYPE html>
                         Chart Month
                         </label>
 
-                        <select name='form-select chart-month-select'
+                        <select name='chart-month-select'
                          class='chart-name-text'>
                             <option value='January'>January</option>
                             <option value='Febuary'>Febuary</option>

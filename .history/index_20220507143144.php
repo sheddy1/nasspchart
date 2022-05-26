@@ -22,7 +22,7 @@ DOCTYPE html>
         <label class="logo-text">NASSCO RETIREMENT CHART</label>
 
         <form action="" method="POST">
-            <button class="view-chart btn btn-success " name="view-chart">
+            <button class="btn btn-success view-chart" name="view-chart">
                 View Chart
             </button>
 
@@ -87,7 +87,7 @@ DOCTYPE html>
                         Chart Month
                         </label>
 
-                        <select name='form-select chart-month-select'
+                        <select name='chart-month-select'
                          class='chart-name-text'>
                             <option value='January'>January</option>
                             <option value='Febuary'>Febuary</option>

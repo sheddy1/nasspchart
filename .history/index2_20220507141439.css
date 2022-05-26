@@ -30,27 +30,38 @@ font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 47px;
+/* identical to box height */
+
+
 color: #055903;
 }
 
-.btn-success {
-    background-color: #bafadc;
-}
-
 .view-chart{
-position: absolute;
+    position: absolute;
 width: 250px;
 height: 50px;
 right: 30px;
 top: 9px;
 
-background-color: #4BFF73;
+background: #4BFF73;
 border-radius: 50px;
 
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 32px;
+line-height: 38px;
+
+
+color: #3F1802;
+}
+
+.btn{
+    border-radius: 100px;
+}
+
+.btn-success {
+    background-color: #4BFF73;
 }
 
 .create-chart{
@@ -68,7 +79,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 32px;
 line-height: 38px;
-
+/* identical to box height */
 
 
 color: #3F1802;

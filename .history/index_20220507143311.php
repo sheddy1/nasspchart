@@ -22,7 +22,7 @@ DOCTYPE html>
         <label class="logo-text">NASSCO RETIREMENT CHART</label>
 
         <form action="" method="POST">
-            <button class="view-chart btn btn-success " name="view-chart">
+            <button class="btn btn-success view-chart" name="view-chart">
                 View Chart
             </button>
 

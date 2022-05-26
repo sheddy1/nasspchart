@@ -30,11 +30,10 @@ font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 47px;
-color: #055903;
-}
+/* identical to box height */
 
-.btn-success {
-    background-color: #bafadc;
+
+color: #055903;
 }
 
 .view-chart{
@@ -44,13 +43,21 @@ height: 50px;
 right: 30px;
 top: 9px;
 
-background-color: #4BFF73;
+/* background-color: #4BFF73;
 border-radius: 50px;
 
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 32px;
+font-size: 32px; */
+}
+
+.btn {
+    border-radius: .10rem;;
+}
+
+.btn-success {
+    background-color: #198754;
 }
 
 .create-chart{
@@ -60,7 +67,7 @@ height: 50px;
 right: 320px;
 top: 9px;
 
-background: #4BFF73;
+/* background: #4BFF73;
 border-radius: 50px;
 
 font-family: 'Roboto';
@@ -71,7 +78,7 @@ line-height: 38px;
 
 
 
-color: #3F1802;
+color: #3F1802; */
 }
 
 #chart-name{
